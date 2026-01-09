@@ -1,0 +1,130 @@
+# =========================
+# Java / Spring Boot
+# =========================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# =========================
+# Maven
+# =========================
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# IDE - IntelliJ IDEA
+# =========================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# =========================
+# IDE - Eclipse
+# =========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# =========================
+# IDE - VS Code
+# =========================
+.vscode/
+
+# =========================
+# Python
+# =========================
+venv/
+env/
+.venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================
+# Data Files
+# =========================
+# Raw Kaggle data (large files, users should download themselves)
+data-transformer/data/kaggle/*.csv
+data/kaggle/*.csv
+
+# Keep output CSVs tracked (remove these lines if you want to ignore them too)
+# data-transformer/output/*.csv
+# output/*.csv
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.local
+.env.*.local
+*.env
+application-local.properties
+application-prod.properties
+secrets.properties
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+spring.log
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# =========================
+# Windows
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Linux
+# =========================
+*~
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak

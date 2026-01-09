@@ -1,0 +1,25 @@
+driver_id,name,team_id,nationality,number,points,wins,podiums,poles
+max_verstappen,Max Verstappen,red_bull,Dutch,33,399,9,14,10
+norris,Lando Norris,mclaren,British,4,344,4,13,8
+leclerc,Charles Leclerc,ferrari,Monegasque,16,327,3,13,2
+piastri,Oscar Piastri,mclaren,Australian,81,265,2,8,0
+sainz,Carlos Sainz,ferrari,Spanish,55,262,2,9,1
+russell,George Russell,mercedes,British,63,226,2,4,3
+hamilton,Lewis Hamilton,mercedes,British,44,207,2,5,0
+perez,Sergio Pérez,red_bull,Mexican,11,138,0,4,0
+alonso,Fernando Alonso,aston_martin,Spanish,14,70,0,0,0
+gasly,Pierre Gasly,alpine,French,10,40,0,1,0
+hulkenberg,Nico Hülkenberg,haas,German,27,36,0,0,0
+tsunoda,Yuki Tsunoda,rb,Japanese,22,29,0,0,0
+stroll,Lance Stroll,aston_martin,Canadian,18,24,0,0,0
+ocon,Esteban Ocon,alpine,French,31,23,0,1,0
+kevin_magnussen,Kevin Magnussen,haas,Danish,20,14,0,0,0
+albon,Alexander Albon,williams,Thai,23,12,0,0,0
+ricciardo,Daniel Ricciardo,rb,Australian,3,7,0,0,0
+bearman,Oliver Bearman,haas,British,38,7,0,0,0
+colapinto,Franco Colapinto,williams,Argentinian ,43,5,0,0,0
+zhou,Guanyu Zhou,sauber,Chinese,24,4,0,0,0
+lawson,Liam Lawson,rb,New Zealander,30,4,0,0,0
+bottas,Valtteri Bottas,sauber,Finnish,77,0,0,0,0
+sargeant,Logan Sargeant,williams,American,2,0,0,0,0
+doohan,Jack Doohan,alpine,Australian,61,0,0,0,0

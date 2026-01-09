@@ -1,0 +1,480 @@
+result_id,race_id,driver_id,position,points,grid_position,status,fastest_lap
+26286,1121,max_verstappen,1,26,1,Finished,False
+26287,1121,perez,2,18,5,Finished,False
+26288,1121,sainz,3,15,4,Finished,False
+26289,1121,leclerc,4,12,2,Finished,False
+26290,1121,russell,5,10,3,Finished,False
+26291,1121,norris,6,8,7,Finished,False
+26292,1121,hamilton,7,6,9,Finished,False
+26293,1121,piastri,8,4,8,Finished,False
+26294,1121,alonso,9,2,6,Finished,False
+26295,1121,stroll,10,1,12,Finished,False
+26296,1121,zhou,11,0,17,+1 Lap,False
+26297,1121,kevin_magnussen,12,0,15,+1 Lap,False
+26298,1121,ricciardo,13,0,14,+1 Lap,False
+26299,1121,tsunoda,14,0,11,+1 Lap,False
+26300,1121,albon,15,0,13,+1 Lap,False
+26301,1121,hulkenberg,16,0,10,+1 Lap,False
+26302,1121,ocon,17,0,19,+1 Lap,False
+26303,1121,gasly,18,0,20,+1 Lap,False
+26304,1121,bottas,19,0,16,+1 Lap,False
+26305,1121,sargeant,20,0,18,+2 Laps,False
+26306,1122,max_verstappen,1,25,1,Finished,False
+26307,1122,perez,2,18,3,Finished,False
+26308,1122,leclerc,3,16,2,Finished,False
+26309,1122,piastri,4,12,5,Finished,False
+26310,1122,alonso,5,10,4,Finished,False
+26311,1122,russell,6,8,7,Finished,False
+26312,1122,bearman,7,6,11,Finished,False
+26313,1122,norris,8,4,6,Finished,False
+26314,1122,hamilton,9,2,8,Finished,False
+26315,1122,hulkenberg,10,1,15,Finished,False
+26316,1122,albon,11,0,12,Finished,False
+26317,1122,kevin_magnussen,12,0,13,Finished,False
+26318,1122,ocon,13,0,17,+1 Lap,False
+26319,1122,sargeant,14,0,19,+1 Lap,False
+26320,1122,tsunoda,15,0,9,+1 Lap,False
+26321,1122,ricciardo,16,0,14,+1 Lap,False
+26322,1122,bottas,17,0,16,+1 Lap,False
+26323,1122,zhou,18,0,20,+1 Lap,False
+26324,1122,stroll,19,0,10,Accident,False
+26325,1122,gasly,20,0,18,Gearbox,False
+26326,1123,sainz,1,25,2,Finished,False
+26327,1123,leclerc,2,19,4,Finished,False
+26328,1123,norris,3,15,3,Finished,False
+26329,1123,piastri,4,12,5,Finished,False
+26330,1123,perez,5,10,6,Finished,False
+26331,1123,stroll,6,8,9,Finished,False
+26332,1123,tsunoda,7,6,8,Finished,False
+26333,1123,alonso,8,4,10,Finished,False
+26334,1123,hulkenberg,9,2,16,Finished,False
+26335,1123,kevin_magnussen,10,1,14,+1 Lap,False
+26336,1123,albon,11,0,12,+1 Lap,False
+26337,1123,ricciardo,12,0,18,+1 Lap,False
+26338,1123,gasly,13,0,17,+1 Lap,False
+26339,1123,bottas,14,0,13,+1 Lap,False
+26340,1123,zhou,15,0,19,+1 Lap,False
+26341,1123,ocon,16,0,15,+1 Lap,False
+26342,1123,russell,17,0,7,Accident,False
+26343,1123,hamilton,18,0,11,Engine,False
+26344,1123,max_verstappen,19,0,1,Brakes,False
+26345,1124,max_verstappen,1,26,1,Finished,False
+26346,1124,perez,2,18,2,Finished,False
+26347,1124,sainz,3,15,4,Finished,False
+26348,1124,leclerc,4,12,8,Finished,False
+26349,1124,norris,5,10,3,Finished,False
+26350,1124,alonso,6,8,5,Finished,False
+26351,1124,russell,7,6,9,Finished,False
+26352,1124,piastri,8,4,6,Finished,False
+26353,1124,hamilton,9,2,7,Finished,False
+26354,1124,tsunoda,10,1,10,+1 Lap,False
+26355,1124,hulkenberg,11,0,12,+1 Lap,False
+26356,1124,stroll,12,0,16,+1 Lap,False
+26357,1124,kevin_magnussen,13,0,18,+1 Lap,False
+26358,1124,bottas,14,0,13,+1 Lap,False
+26359,1124,ocon,15,0,15,+1 Lap,False
+26360,1124,gasly,16,0,17,+1 Lap,False
+26361,1124,sargeant,17,0,19,+1 Lap,False
+26362,1124,zhou,18,0,20,Gearbox,False
+26363,1124,ricciardo,19,0,11,Accident,False
+26364,1124,albon,20,0,14,Accident,False
+26365,1125,max_verstappen,1,25,1,Finished,False
+26366,1125,norris,2,18,4,Finished,False
+26367,1125,perez,3,15,2,Finished,False
+26368,1125,leclerc,4,12,6,Finished,False
+26369,1125,sainz,5,10,7,Finished,False
+26370,1125,russell,6,8,8,Finished,False
+26371,1125,alonso,7,7,3,Finished,False
+26372,1125,piastri,8,4,5,Finished,False
+26373,1125,hamilton,9,2,18,Finished,False
+26374,1125,hulkenberg,10,1,9,Finished,False
+26375,1125,ocon,11,0,13,Finished,False
+26376,1125,albon,12,0,14,Finished,False
+26377,1125,gasly,13,0,15,Finished,False
+26378,1125,zhou,14,0,16,Finished,False
+26379,1125,stroll,15,0,11,Finished,False
+26380,1125,kevin_magnussen,16,0,17,Finished,False
+26381,1125,sargeant,17,0,20,Finished,False
+26382,1125,ricciardo,18,0,12,Retired,False
+26383,1125,tsunoda,19,0,19,Retired,False
+26384,1125,bottas,20,0,10,Retired,False
+26385,1126,norris,1,25,5,Finished,False
+26386,1126,max_verstappen,2,18,1,Finished,False
+26387,1126,leclerc,3,15,2,Finished,False
+26388,1126,perez,4,12,4,Finished,False
+26389,1126,sainz,5,10,3,Finished,False
+26390,1126,hamilton,6,8,8,Finished,False
+26391,1126,tsunoda,7,6,10,Finished,False
+26392,1126,russell,8,4,7,Finished,False
+26393,1126,alonso,9,2,15,Finished,False
+26394,1126,ocon,10,1,13,Finished,False
+26395,1126,hulkenberg,11,0,9,Finished,False
+26396,1126,gasly,12,0,12,Finished,False
+26397,1126,piastri,13,0,6,Finished,False
+26398,1126,zhou,14,0,19,Finished,False
+26399,1126,ricciardo,15,0,20,Finished,False
+26400,1126,bottas,16,0,16,Finished,False
+26401,1126,stroll,17,0,11,Finished,False
+26402,1126,albon,18,0,14,Finished,False
+26403,1126,kevin_magnussen,19,0,18,Finished,False
+26404,1126,sargeant,20,0,17,Collision,False
+26405,1127,max_verstappen,1,25,1,Finished,False
+26406,1127,norris,2,18,2,Finished,False
+26407,1127,leclerc,3,15,3,Finished,False
+26408,1127,piastri,4,12,5,Finished,False
+26409,1127,sainz,5,10,4,Finished,False
+26410,1127,hamilton,6,8,8,Finished,False
+26411,1127,russell,7,7,6,Finished,False
+26412,1127,perez,8,4,11,Finished,False
+26413,1127,stroll,9,2,13,Finished,False
+26414,1127,tsunoda,10,1,7,+1 Lap,False
+26415,1127,hulkenberg,11,0,10,+1 Lap,False
+26416,1127,kevin_magnussen,12,0,18,+1 Lap,False
+26417,1127,ricciardo,13,0,9,+1 Lap,False
+26418,1127,ocon,14,0,12,+1 Lap,False
+26419,1127,zhou,15,0,17,+1 Lap,False
+26420,1127,gasly,16,0,15,+1 Lap,False
+26421,1127,sargeant,17,0,19,+1 Lap,False
+26422,1127,bottas,18,0,16,+1 Lap,False
+26423,1127,alonso,19,0,20,+1 Lap,False
+26424,1127,albon,20,0,14,Retired,False
+26425,1128,leclerc,1,25,1,Finished,False
+26426,1128,piastri,2,18,2,Finished,False
+26427,1128,sainz,3,15,3,Finished,False
+26428,1128,norris,4,12,4,Finished,False
+26429,1128,russell,5,10,5,Finished,False
+26430,1128,max_verstappen,6,8,6,Finished,False
+26431,1128,hamilton,7,7,7,Finished,False
+26432,1128,tsunoda,8,4,8,+1 Lap,False
+26433,1128,albon,9,2,9,+1 Lap,False
+26434,1128,gasly,10,1,10,+1 Lap,False
+26435,1128,alonso,11,0,14,+2 Laps,False
+26436,1128,ricciardo,12,0,12,+2 Laps,False
+26437,1128,bottas,13,0,17,+2 Laps,False
+26438,1128,stroll,14,0,13,+2 Laps,False
+26439,1128,sargeant,15,0,15,+2 Laps,False
+26440,1128,zhou,16,0,18,+2 Laps,False
+26441,1128,ocon,17,0,11,Collision,False
+26442,1128,perez,18,0,16,Collision,False
+26443,1128,hulkenberg,19,0,19,Collision,False
+26444,1128,kevin_magnussen,20,0,20,Collision,False
+26445,1129,max_verstappen,1,25,2,Finished,False
+26446,1129,norris,2,18,3,Finished,False
+26447,1129,russell,3,15,1,Finished,False
+26448,1129,hamilton,4,13,7,Finished,False
+26449,1129,piastri,5,10,4,Finished,False
+26450,1129,alonso,6,8,6,Finished,False
+26451,1129,stroll,7,6,9,Finished,False
+26452,1129,ricciardo,8,4,5,Finished,False
+26453,1129,gasly,9,2,15,Finished,False
+26454,1129,ocon,10,1,18,Finished,False
+26455,1129,hulkenberg,11,0,17,Finished,False
+26456,1129,kevin_magnussen,12,0,14,Finished,False
+26457,1129,bottas,13,0,0,Finished,False
+26458,1129,tsunoda,14,0,8,Finished,False
+26459,1129,zhou,15,0,0,+1 Lap,False
+26460,1129,sainz,16,0,12,Collision,False
+26461,1129,albon,17,0,10,Collision,False
+26462,1129,perez,18,0,16,Accident,False
+26463,1129,leclerc,19,0,11,Engine,False
+26464,1129,sargeant,20,0,13,Accident,False
+26465,1130,max_verstappen,1,25,2,Finished,False
+26466,1130,norris,2,19,1,Finished,False
+26467,1130,hamilton,3,15,3,Finished,False
+26468,1130,russell,4,12,4,Finished,False
+26469,1130,leclerc,5,10,5,Finished,False
+26470,1130,sainz,6,8,6,Finished,False
+26471,1130,piastri,7,6,9,Finished,False
+26472,1130,perez,8,4,11,Finished,False
+26473,1130,gasly,9,2,7,Finished,False
+26474,1130,ocon,10,1,8,Finished,False
+26475,1130,hulkenberg,11,0,13,Finished,False
+26476,1130,alonso,12,0,10,+1 Lap,False
+26477,1130,zhou,13,0,15,+1 Lap,False
+26478,1130,stroll,14,0,14,+1 Lap,False
+26479,1130,ricciardo,15,0,18,+1 Lap,False
+26480,1130,bottas,16,0,12,+1 Lap,False
+26481,1130,kevin_magnussen,17,0,16,+1 Lap,False
+26482,1130,albon,18,0,0,+1 Lap,False
+26483,1130,tsunoda,19,0,17,+1 Lap,False
+26484,1130,sargeant,20,0,19,+2 Laps,False
+26485,1131,russell,1,25,3,Finished,False
+26486,1131,piastri,2,18,7,Finished,False
+26487,1131,sainz,3,15,4,Finished,False
+26488,1131,hamilton,4,12,5,Finished,False
+26489,1131,max_verstappen,5,10,1,Finished,False
+26490,1131,hulkenberg,6,8,9,Finished,False
+26491,1131,perez,7,6,8,Finished,False
+26492,1131,kevin_magnussen,8,4,12,Finished,False
+26493,1131,ricciardo,9,2,11,Finished,False
+26494,1131,gasly,10,1,13,Finished,False
+26495,1131,leclerc,11,0,6,Finished,False
+26496,1131,ocon,12,0,10,Finished,False
+26497,1131,stroll,13,0,17,+1 Lap,False
+26498,1131,tsunoda,14,0,14,+1 Lap,False
+26499,1131,albon,15,0,16,+1 Lap,False
+26500,1131,bottas,16,0,18,+1 Lap,False
+26501,1131,zhou,17,0,20,+1 Lap,False
+26502,1131,alonso,18,0,15,+1 Lap,False
+26503,1131,sargeant,19,0,19,+2 Laps,False
+26504,1131,norris,20,0,2,+7 Laps,False
+26505,1132,hamilton,1,25,2,Finished,False
+26506,1132,max_verstappen,2,18,4,Finished,False
+26507,1132,norris,3,15,3,Finished,False
+26508,1132,piastri,4,12,5,Finished,False
+26509,1132,sainz,5,11,7,Finished,False
+26510,1132,hulkenberg,6,8,6,Finished,False
+26511,1132,stroll,7,6,8,Finished,False
+26512,1132,alonso,8,4,10,Finished,False
+26513,1132,albon,9,2,9,Finished,False
+26514,1132,tsunoda,10,1,13,Finished,False
+26515,1132,sargeant,11,0,12,Finished,False
+26516,1132,kevin_magnussen,12,0,17,Finished,False
+26517,1132,ricciardo,13,0,15,+1 Lap,False
+26518,1132,leclerc,14,0,11,+1 Lap,False
+26519,1132,bottas,15,0,16,+1 Lap,False
+26520,1132,ocon,16,0,18,+2 Laps,False
+26521,1132,perez,17,0,0,+2 Laps,False
+26522,1132,zhou,18,0,14,+2 Laps,False
+26523,1132,russell,19,0,1,Water pressure,False
+26524,1132,gasly,20,0,19,Gearbox,False
+26525,1133,piastri,1,25,2,Finished,False
+26526,1133,norris,2,18,1,Finished,False
+26527,1133,hamilton,3,15,5,Finished,False
+26528,1133,leclerc,4,12,6,Finished,False
+26529,1133,max_verstappen,5,10,3,Finished,False
+26530,1133,sainz,6,8,4,Finished,False
+26531,1133,perez,7,6,16,Finished,False
+26532,1133,russell,8,5,17,Finished,False
+26533,1133,tsunoda,9,2,10,Finished,False
+26534,1133,stroll,10,1,8,Finished,False
+26535,1133,alonso,11,0,7,Finished,False
+26536,1133,ricciardo,12,0,9,+1 Lap,False
+26537,1133,hulkenberg,13,0,11,+1 Lap,False
+26538,1133,albon,14,0,13,+1 Lap,False
+26539,1133,kevin_magnussen,15,0,15,+1 Lap,False
+26540,1133,bottas,16,0,12,+1 Lap,False
+26541,1133,sargeant,17,0,14,+1 Lap,False
+26542,1133,ocon,18,0,19,+1 Lap,False
+26543,1133,zhou,19,0,18,+1 Lap,False
+26544,1133,gasly,20,0,0,Hydraulics,False
+26545,1134,hamilton,1,25,3,Finished,False
+26546,1134,piastri,2,18,5,Finished,False
+26547,1134,leclerc,3,15,1,Finished,False
+26548,1134,max_verstappen,4,12,11,Finished,False
+26549,1134,norris,5,10,4,Finished,False
+26550,1134,sainz,6,8,7,Finished,False
+26551,1134,perez,7,7,2,Finished,False
+26552,1134,alonso,8,4,8,Finished,False
+26553,1134,ocon,9,2,9,Finished,False
+26554,1134,ricciardo,10,1,13,Finished,False
+26555,1134,stroll,11,0,15,Finished,False
+26556,1134,albon,12,0,10,Finished,False
+26557,1134,gasly,13,0,12,Finished,False
+26558,1134,kevin_magnussen,14,0,17,Finished,False
+26559,1134,bottas,15,0,14,Finished,False
+26560,1134,tsunoda,16,0,20,Finished,False
+26561,1134,sargeant,17,0,18,Finished,False
+26562,1134,hulkenberg,18,0,16,Finished,False
+26563,1134,zhou,19,0,19,Retired,False
+26564,1134,russell,20,0,6,Disqualified,False
+26565,1135,norris,1,26,1,Finished,False
+26566,1135,max_verstappen,2,18,2,Finished,False
+26567,1135,leclerc,3,15,6,Finished,False
+26568,1135,piastri,4,12,3,Finished,False
+26569,1135,sainz,5,10,10,Finished,False
+26570,1135,perez,6,8,5,Finished,False
+26571,1135,russell,7,6,4,Finished,False
+26572,1135,hamilton,8,4,14,Finished,False
+26573,1135,gasly,9,2,9,+1 Lap,False
+26574,1135,alonso,10,1,7,+1 Lap,False
+26575,1135,hulkenberg,11,0,12,+1 Lap,False
+26576,1135,ricciardo,12,0,13,+1 Lap,False
+26577,1135,stroll,13,0,8,+1 Lap,False
+26578,1135,albon,14,0,19,+1 Lap,False
+26579,1135,ocon,15,0,15,+1 Lap,False
+26580,1135,sargeant,16,0,18,+1 Lap,False
+26581,1135,tsunoda,17,0,11,+1 Lap,False
+26582,1135,kevin_magnussen,18,0,0,+1 Lap,False
+26583,1135,bottas,19,0,16,+2 Laps,False
+26584,1135,zhou,20,0,17,+2 Laps,False
+26585,1136,leclerc,1,25,4,Finished,False
+26586,1136,piastri,2,18,2,Finished,False
+26587,1136,norris,3,16,1,Finished,False
+26588,1136,sainz,4,12,5,Finished,False
+26589,1136,hamilton,5,10,6,Finished,False
+26590,1136,max_verstappen,6,8,7,Finished,False
+26591,1136,russell,7,6,3,Finished,False
+26592,1136,perez,8,4,8,Finished,False
+26593,1136,albon,9,2,9,Finished,False
+26594,1136,kevin_magnussen,10,1,13,Finished,False
+26595,1136,alonso,11,0,11,Finished,False
+26596,1136,colapinto,12,0,18,Finished,False
+26597,1136,ricciardo,13,0,12,Finished,False
+26598,1136,ocon,14,0,15,+1 Lap,False
+26599,1136,gasly,15,0,14,+1 Lap,False
+26600,1136,bottas,16,0,19,+1 Lap,False
+26601,1136,hulkenberg,17,0,10,+1 Lap,False
+26602,1136,zhou,18,0,20,+1 Lap,False
+26603,1136,stroll,19,0,17,+1 Lap,False
+26604,1136,tsunoda,20,0,16,Overheating,False
+26605,1137,piastri,1,25,2,Finished,False
+26606,1137,leclerc,2,18,1,Finished,False
+26607,1137,russell,3,15,5,Finished,False
+26608,1137,norris,4,13,15,Finished,False
+26609,1137,max_verstappen,5,10,6,Finished,False
+26610,1137,alonso,6,8,7,Finished,False
+26611,1137,albon,7,6,9,Finished,False
+26612,1137,colapinto,8,4,8,Finished,False
+26613,1137,hamilton,9,2,0,Finished,False
+26614,1137,bearman,10,1,10,Finished,False
+26615,1137,hulkenberg,11,0,12,Finished,False
+26616,1137,gasly,12,0,18,Finished,False
+26617,1137,ricciardo,13,0,14,Finished,False
+26618,1137,zhou,14,0,17,Finished,False
+26619,1137,ocon,15,0,0,+1 Lap,False
+26620,1137,bottas,16,0,16,+1 Lap,False
+26621,1137,perez,17,0,4,Retired,False
+26622,1137,sainz,18,0,3,Retired,False
+26623,1137,stroll,19,0,13,Retired,False
+26624,1137,tsunoda,20,0,11,Retired,False
+26625,1138,norris,1,25,1,Finished,False
+26626,1138,max_verstappen,2,18,2,Finished,False
+26627,1138,piastri,3,15,5,Finished,False
+26628,1138,russell,4,12,4,Finished,False
+26629,1138,leclerc,5,10,9,Finished,False
+26630,1138,hamilton,6,8,3,Finished,False
+26631,1138,sainz,7,6,10,Finished,False
+26632,1138,alonso,8,4,7,+1 Lap,False
+26633,1138,hulkenberg,9,2,6,+1 Lap,False
+26634,1138,perez,10,1,13,+1 Lap,False
+26635,1138,colapinto,11,0,12,+1 Lap,False
+26636,1138,tsunoda,12,0,8,+1 Lap,False
+26637,1138,ocon,13,0,15,+1 Lap,False
+26638,1138,stroll,14,0,17,+1 Lap,False
+26639,1138,zhou,15,0,20,+1 Lap,False
+26640,1138,bottas,16,0,19,+1 Lap,False
+26641,1138,gasly,17,0,18,+1 Lap,False
+26642,1138,ricciardo,18,0,16,+1 Lap,False
+26643,1138,kevin_magnussen,19,0,14,Accident,False
+26644,1138,albon,20,0,11,Power Unit,False
+26645,1139,leclerc,1,25,4,Finished,False
+26646,1139,sainz,2,18,3,Finished,False
+26647,1139,max_verstappen,3,15,2,Finished,False
+26648,1139,norris,4,12,1,Finished,False
+26649,1139,piastri,5,10,5,Finished,False
+26650,1139,russell,6,8,20,Finished,False
+26651,1139,perez,7,6,9,Finished,False
+26652,1139,hulkenberg,8,4,11,Finished,False
+26653,1139,lawson,9,2,19,Finished,False
+26654,1139,colapinto,10,1,15,Finished,False
+26655,1139,kevin_magnussen,11,0,8,Finished,False
+26656,1139,gasly,12,0,6,Finished,False
+26657,1139,alonso,13,0,7,+1 Lap,False
+26658,1139,tsunoda,14,0,10,+1 Lap,False
+26659,1139,stroll,15,0,13,+1 Lap,False
+26660,1139,albon,16,0,14,+1 Lap,False
+26661,1139,bottas,17,0,16,+1 Lap,False
+26662,1139,ocon,18,0,12,+1 Lap,False
+26663,1139,zhou,19,0,18,+1 Lap,False
+26664,1139,hamilton,20,0,17,Spun off,False
+26665,1140,sainz,1,25,1,Finished,False
+26666,1140,norris,2,18,3,Finished,False
+26667,1140,leclerc,3,16,4,Finished,False
+26668,1140,hamilton,4,12,6,Finished,False
+26669,1140,russell,5,10,5,Finished,False
+26670,1140,max_verstappen,6,8,2,Finished,False
+26671,1140,kevin_magnussen,7,6,7,Finished,False
+26672,1140,piastri,8,4,17,Finished,False
+26673,1140,hulkenberg,9,2,10,+1 Lap,False
+26674,1140,gasly,10,1,8,+1 Lap,False
+26675,1140,stroll,11,0,14,+1 Lap,False
+26676,1140,colapinto,12,0,16,+1 Lap,False
+26677,1140,ocon,13,0,0,+1 Lap,False
+26678,1140,bottas,14,0,15,+1 Lap,False
+26679,1140,zhou,15,0,19,+1 Lap,False
+26680,1140,lawson,16,0,12,+1 Lap,False
+26681,1140,perez,17,0,18,+1 Lap,False
+26682,1140,alonso,18,0,13,Brakes,False
+26683,1140,albon,19,0,9,Collision,False
+26684,1140,tsunoda,20,0,11,Collision,False
+26685,1141,max_verstappen,1,26,17,Finished,False
+26686,1141,ocon,2,18,4,Finished,False
+26687,1141,gasly,3,15,13,Finished,False
+26688,1141,russell,4,12,2,Finished,False
+26689,1141,leclerc,5,10,6,Finished,False
+26690,1141,norris,6,8,1,Finished,False
+26691,1141,tsunoda,7,6,3,Finished,False
+26692,1141,piastri,8,4,8,Finished,False
+26693,1141,lawson,9,2,5,Finished,False
+26694,1141,hamilton,10,1,14,Finished,False
+26695,1141,perez,11,0,12,Finished,False
+26696,1141,bearman,12,0,15,Finished,False
+26697,1141,bottas,13,0,11,Finished,False
+26698,1141,alonso,14,0,9,Finished,False
+26699,1141,zhou,15,0,19,Finished,False
+26700,1141,sainz,16,0,0,Accident,False
+26701,1141,colapinto,17,0,16,Accident,False
+26702,1141,albon,18,0,7,Withdrew,False
+26703,1141,stroll,19,0,10,Withdrew,False
+26704,1141,hulkenberg,20,0,17,Disqualified,False
+26705,1142,russell,1,25,1,Finished,False
+26706,1142,hamilton,2,18,10,Finished,False
+26707,1142,sainz,3,15,2,Finished,False
+26708,1142,leclerc,4,12,4,Finished,False
+26709,1142,max_verstappen,5,10,5,Finished,False
+26710,1142,norris,6,9,6,Finished,False
+26711,1142,piastri,7,6,8,Finished,False
+26712,1142,hulkenberg,8,4,9,Finished,False
+26713,1142,tsunoda,9,2,7,Finished,False
+26714,1142,perez,10,1,15,Finished,False
+26715,1142,alonso,11,0,16,Finished,False
+26716,1142,kevin_magnussen,12,0,12,Finished,False
+26717,1142,zhou,13,0,13,Finished,False
+26718,1142,colapinto,14,0,0,Finished,False
+26719,1142,stroll,15,0,18,Finished,False
+26720,1142,lawson,16,0,14,Finished,False
+26721,1142,ocon,17,0,11,+1 Lap,False
+26722,1142,bottas,18,0,19,+1 Lap,False
+26723,1142,albon,19,0,17,Radiator,False
+26724,1142,gasly,20,0,3,Engine,False
+26725,1143,max_verstappen,1,25,2,Finished,False
+26726,1143,leclerc,2,18,5,Finished,False
+26727,1143,piastri,3,15,4,Finished,False
+26728,1143,russell,4,12,1,Finished,False
+26729,1143,gasly,5,10,11,Finished,False
+26730,1143,sainz,6,8,7,Finished,False
+26731,1143,alonso,7,6,8,Finished,False
+26732,1143,zhou,8,4,12,Finished,False
+26733,1143,kevin_magnussen,9,2,10,Finished,False
+26734,1143,norris,10,2,3,Finished,False
+26735,1143,bottas,11,0,13,Finished,False
+26736,1143,hamilton,12,0,6,Finished,False
+26737,1143,tsunoda,13,0,14,Finished,False
+26738,1143,lawson,14,0,17,Finished,False
+26739,1143,albon,15,0,16,+1 Lap,False
+26740,1143,hulkenberg,16,0,18,Spun off,False
+26741,1143,perez,17,0,9,Spun off,False
+26742,1143,stroll,18,0,15,Collision damage,False
+26743,1143,colapinto,19,0,19,Collision,False
+26744,1143,ocon,20,0,20,Collision,False
+26745,1144,norris,1,25,1,Finished,False
+26746,1144,sainz,2,18,3,Finished,False
+26747,1144,leclerc,3,15,19,Finished,False
+26748,1144,hamilton,4,12,16,Finished,False
+26749,1144,russell,5,10,6,Finished,False
+26750,1144,max_verstappen,6,8,4,Finished,False
+26751,1144,gasly,7,6,5,Finished,False
+26752,1144,hulkenberg,8,4,7,Finished,False
+26753,1144,alonso,9,2,8,Finished,False
+26754,1144,piastri,10,1,2,Finished,False
+26755,1144,albon,11,0,18,+1 Lap,False
+26756,1144,tsunoda,12,0,11,+1 Lap,False
+26757,1144,zhou,13,0,15,+1 Lap,False
+26758,1144,stroll,14,0,13,+1 Lap,False
+26759,1144,doohan,15,0,17,+1 Lap,False
+26760,1144,kevin_magnussen,16,0,14,+1 Lap,False
+26761,1144,lawson,17,0,12,Engine,False
+26762,1144,bottas,18,0,9,Collision damage,False
+26763,1144,colapinto,19,0,20,Engine,False
+26764,1144,perez,20,0,10,Collision,False
