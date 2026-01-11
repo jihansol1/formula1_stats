@@ -9,8 +9,7 @@ public class ConstructorStandingDTO {
     private int podiums;
 
     // Constructor
-    public ConstructorStandingDTO(int position, String teamId, String name, int points, int wins, int podiums) {
-        this.position = position;
+    public ConstructorStandingDTO(String teamId, String name, int points, int wins, int podiums) {
         this.teamId = teamId;
         this.name = name;
         this.points = points;
