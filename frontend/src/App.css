@@ -1,38 +1,227 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #15151e;
+  color: #ffffff;
+}
+
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.app-header {
   text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #e10600;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header p {
+  color: #888;
+  font-size: 1.1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Timeline */
+.timeline-container {
+  margin-bottom: 40px;
+}
+
+.timeline-container h2 {
+  margin-bottom: 15px;
+  color: #e10600;
+}
+
+.timeline {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 15px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #e10600 #1e1e2e;
 }
 
-.App-link {
-  color: #61dafb;
+.timeline::-webkit-scrollbar {
+  height: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.timeline::-webkit-scrollbar-track {
+  background: #1e1e2e;
+  border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: #e10600;
+  border-radius: 4px;
+}
+
+.timeline-item {
+  flex-shrink: 0;
+  background: #1e1e2e;
+  border: 2px solid #2d2d3d;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  min-width: 80px;
+}
+
+.timeline-item:hover {
+  border-color: #e10600;
+  transform: translateY(-2px);
+}
+
+.timeline-item.selected {
+  background: #e10600;
+  border-color: #e10600;
+}
+
+.race-round {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.race-country {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 2px;
+}
+
+.timeline-item.selected .race-country {
+  color: #fff;
+}
+
+.race-date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.timeline-item.selected .race-date {
+  color: #ffcccb;
+}
+
+.selected-race-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1e1e2e;
+  border-radius: 8px;
+  border-left: 4px solid #e10600;
+}
+
+.selected-race-info h3 {
+  margin-bottom: 5px;
+}
+
+.selected-race-info p {
+  color: #888;
+}
+
+/* Standings Grid */
+.standings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .standings-grid {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* Standings Tables */
+.standings-container {
+  background: #1e1e2e;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.standings-container h2 {
+  margin-bottom: 15px;
+  color: #e10600;
+  font-size: 1.3rem;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.standings-table th,
+.standings-table td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.standings-table th {
+  background: #2d2d3d;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.standings-table th:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.standings-table th:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.standings-table tbody tr {
+  border-bottom: 1px solid #2d2d3d;
+  transition: background 0.2s ease;
+}
+
+.standings-table tbody tr:hover {
+  background: #2d2d3d;
+}
+
+.standings-table tbody tr.podium {
+  background: rgba(225, 6, 0, 0.1);
+}
+
+.standings-table tbody tr.podium:hover {
+  background: rgba(225, 6, 0, 0.2);
+}
+
+.position {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.driver-name,
+.team-name {
+  font-weight: 500;
+}
+
+.team-name {
+  text-transform: capitalize;
+}
+
+.points {
+  font-weight: bold;
+  color: #e10600;
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #888;
 }
