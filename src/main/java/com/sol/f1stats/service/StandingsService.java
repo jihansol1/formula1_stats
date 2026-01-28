@@ -1,6 +1,5 @@
 package com.sol.f1stats.service;
 
-
 import com.sol.f1stats.dto.ConstructorStandingDTO;
 import com.sol.f1stats.dto.DriverStandingDTO;
 import com.sol.f1stats.model.Driver;
@@ -35,15 +34,16 @@ public class StandingsService {
     @Autowired
     private TeamRepository teamRepository;
 
-    // Get Driver Standings up to and including a specific race
+    // Get Driver Standings up to and including a specific race (within same season)
     public List<DriverStandingDTO> getDriverStandingsUpToRace(int raceId) {
-        // Get the target race to find its date
+        // Get the target race to find its date and season
         Race targetRace = raceRepository.findById(raceId)
                 .orElseThrow(() -> new RuntimeException("Race not found: " + raceId));
 
+        Integer targetSeason = targetRace.getSeason();
 
-        // Get all races up to and including this date
-        List<Race> racesUpTo = raceRepository.findAllByOrderByDateAsc().stream()
+        // Get all races in the SAME SEASON up to and including this date
+        List<Race> racesUpTo = raceRepository.findBySeasonOrderByDateAsc(targetSeason).stream()
                 .filter(r -> !r.getDate().isAfter(targetRace.getDate()))
                 .collect(Collectors.toList());
 
@@ -56,7 +56,7 @@ public class StandingsService {
         List<Result> results = resultRepository.findByRaceIdIn(raceIds);
 
         // Get all drivers for name lookup
-        Map<String,Driver> driverMap = driverRepository.findAll().stream()
+        Map<String, Driver> driverMap = driverRepository.findAll().stream()
                 .collect(Collectors.toMap(Driver::getDriverId, d -> d));
 
         // Aggregate stats per driver: [points, wins, podiums]
@@ -68,21 +68,24 @@ public class StandingsService {
 
             int[] stats = driverStats.get(driverId);
             stats[0] += result.getPoints() != null ? result.getPoints() : 0;
-            // wins
-            if (result.getPosition() != null && result.getPosition() == 1) stats[1]++;
-            // podiums (within 3rd place)
-            if (result.getPosition() != null && result.getPosition() <= 3) stats[2]++;
+
+            // Only count wins/podiums for main races, not sprints
+            Boolean isSprint = result.getIsSprint();
+            if (isSprint == null || !isSprint) {
+                if (result.getPosition() != null && result.getPosition() == 1) stats[1]++;
+                if (result.getPosition() != null && result.getPosition() <= 3) stats[2]++;
+            }
         }
 
         // Convert to DTOs
         List<DriverStandingDTO> standings = new ArrayList<>();
-        for (Map.Entry<String,int[]> entry : driverStats.entrySet()) {
+        for (Map.Entry<String, int[]> entry : driverStats.entrySet()) {
             String driverId = entry.getKey();
             int[] stats = entry.getValue();
             Driver driver = driverMap.get(driverId);
 
             if (driver != null) {
-                standings.add(new DriverStandingDTO (
+                standings.add(new DriverStandingDTO(
                         driverId,
                         driver.getName(),
                         driver.getTeamId(),
@@ -95,21 +98,22 @@ public class StandingsService {
         standings.sort((a, b) -> Integer.compare(b.getPoints(), a.getPoints()));
 
         // Set Positions
-        for (int i=0; i<standings.size(); i++) {
-            standings.get(i).setPosition(i+1);
+        for (int i = 0; i < standings.size(); i++) {
+            standings.get(i).setPosition(i + 1);
         }
         return standings;
     }
 
-
-    // Get Constructor Standings up to and including a specific race
+    // Get Constructor Standings up to and including a specific race (within same season)
     public List<ConstructorStandingDTO> getConstructorStandingsUpToRace(Integer raceId) {
-        // Get the target race to find its date
+        // Get the target race to find its date and season
         Race targetRace = raceRepository.findById(raceId)
                 .orElseThrow(() -> new RuntimeException("Race not found: " + raceId));
 
-        // Get all races up to and including this date
-        List<Race> racesUpTo = raceRepository.findAllByOrderByDateAsc().stream()
+        Integer targetSeason = targetRace.getSeason();
+
+        // Get all races in the SAME SEASON up to and including this date
+        List<Race> racesUpTo = raceRepository.findBySeasonOrderByDateAsc(targetSeason).stream()
                 .filter(r -> !r.getDate().isAfter(targetRace.getDate()))
                 .collect(Collectors.toList());
 
@@ -121,27 +125,29 @@ public class StandingsService {
         // Get all results for these races
         List<Result> results = resultRepository.findByRaceIdIn(raceIds);
 
-        // Get driver to team mapping
-        Map<String, String> driverToTeam = driverRepository.findAll().stream()
-                .collect(Collectors.toMap(Driver::getDriverId, Driver::getTeamId));
-
         // Get all teams for name lookup
         Map<String, Team> teamMap = teamRepository.findAll().stream()
                 .collect(Collectors.toMap(Team::getTeamId, t -> t));
 
         // Aggregate stats per constructor: [points, wins, podiums]
+        // Use constructor_id from results (team at time of race)
         Map<String, int[]> constructorStats = new HashMap<>();
 
         for (Result result : results) {
-            String teamId = driverToTeam.get(result.getDriverId());
+            String teamId = result.getConstructorId();
             if (teamId == null) continue;
 
             constructorStats.putIfAbsent(teamId, new int[]{0, 0, 0});
 
             int[] stats = constructorStats.get(teamId);
-            stats[0] += result.getPoints() != null ? result.getPoints() : 0;  // points
-            if (result.getPosition() != null && result.getPosition() == 1) stats[1]++;  // wins
-            if (result.getPosition() != null && result.getPosition() <= 3) stats[2]++;  // podiums
+            stats[0] += result.getPoints() != null ? result.getPoints() : 0;
+
+            // Only count wins/podiums for main races, not sprints
+            Boolean isSprint = result.getIsSprint();
+            if (isSprint == null || !isSprint) {
+                if (result.getPosition() != null && result.getPosition() == 1) stats[1]++;
+                if (result.getPosition() != null && result.getPosition() <= 3) stats[2]++;
+            }
         }
 
         // Convert to DTOs
@@ -171,8 +177,3 @@ public class StandingsService {
         return standings;
     }
 }
-
-
-
-
-

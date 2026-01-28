@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-SEASON = 2024
+SEASONS = [2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
 def load_kaggle_data():
     """Load all CSV files from Kaggle dataset"""
@@ -18,10 +18,10 @@ def load_kaggle_data():
         'status': pd.read_csv(f'{data_path}status.csv')
     }
 
-def create_races_table(data, season):
-    """Create races table for specified season"""
+def create_races_table(data, seasons):
+    """Create races table for specified seasons"""
     races = data['races'].merge(data['circuits'], on='circuitId')
-    races = races[races['year'] == season]
+    races = races[races['year'].isin(seasons)]
 
     output = pd.DataFrame({
         'race_id': races['raceId'],
@@ -32,18 +32,15 @@ def create_races_table(data, season):
         'season': races['year']
     })
 
-    return output.sort_values('date')
+    return output.sort_values(['season', 'date'])
 
-def get_combined_points(data, season):
+def get_combined_points(data, seasons):
     """Combine race results and sprint results for accurate points"""
-    # Get race IDs for the season
-    season_races = data['races'][data['races']['year'] == season]['raceId'].tolist()
+    season_races = data['races'][data['races']['year'].isin(seasons)]['raceId'].tolist()
 
-    # Filter race results for season
     race_results = data['results'][data['results']['raceId'].isin(season_races)].copy()
     race_results['result_type'] = 'race'
 
-    # Filter sprint results for season
     sprint_results = data['sprint_results'][data['sprint_results']['raceId'].isin(season_races)].copy()
     sprint_results['result_type'] = 'sprint'
 
@@ -52,38 +49,33 @@ def get_combined_points(data, season):
 
     return race_results, sprint_results
 
-def create_teams_table(data, season):
+def create_teams_table(data, seasons):
     """Create teams table with combined race + sprint stats"""
-    race_results, sprint_results = get_combined_points(data, season)
+    race_results, sprint_results = get_combined_points(data, seasons)
 
-    # Aggregate race results
     race_stats = race_results.groupby('constructorId').agg({
         'points': 'sum',
         'positionOrder': lambda x: (x == 1).sum(),
     }).reset_index()
     race_stats.columns = ['constructorId', 'race_points', 'race_wins']
 
-    # Aggregate sprint results
     sprint_stats = sprint_results.groupby('constructorId').agg({
         'points': 'sum',
         'positionOrder': lambda x: (x == 1).sum(),
     }).reset_index()
     sprint_stats.columns = ['constructorId', 'sprint_points', 'sprint_wins']
 
-    # Combine
     team_stats = race_stats.merge(sprint_stats, on='constructorId', how='left')
     team_stats['sprint_points'] = team_stats['sprint_points'].fillna(0)
     team_stats['sprint_wins'] = team_stats['sprint_wins'].fillna(0)
 
     team_stats['points'] = team_stats['race_points'] + team_stats['sprint_points']
-    team_stats['wins'] = team_stats['race_wins']  # Only count main race wins
+    team_stats['wins'] = team_stats['race_wins']
 
-    # Count podiums (race only)
     podiums = race_results[race_results['positionOrder'] <= 3].groupby('constructorId').size().reset_index(name='podiums')
     team_stats = team_stats.merge(podiums, on='constructorId', how='left')
     team_stats['podiums'] = team_stats['podiums'].fillna(0).astype(int)
 
-    # Add team info
     teams = team_stats.merge(data['constructors'], on='constructorId')
 
     output = pd.DataFrame({
@@ -97,11 +89,10 @@ def create_teams_table(data, season):
 
     return output
 
-def create_drivers_table(data, season):
+def create_drivers_table(data, seasons):
     """Create drivers table with combined race + sprint stats"""
-    race_results, sprint_results = get_combined_points(data, season)
+    race_results, sprint_results = get_combined_points(data, seasons)
 
-    # Aggregate race results
     race_stats = race_results.groupby('driverId').agg({
         'points': 'sum',
         'positionOrder': lambda x: (x == 1).sum(),
@@ -109,25 +100,21 @@ def create_drivers_table(data, season):
     }).reset_index()
     race_stats.columns = ['driverId', 'race_points', 'race_wins', 'poles']
 
-    # Aggregate sprint results
     sprint_stats = sprint_results.groupby('driverId').agg({
         'points': 'sum',
     }).reset_index()
     sprint_stats.columns = ['driverId', 'sprint_points']
 
-    # Combine
     driver_stats = race_stats.merge(sprint_stats, on='driverId', how='left')
     driver_stats['sprint_points'] = driver_stats['sprint_points'].fillna(0)
 
     driver_stats['points'] = driver_stats['race_points'] + driver_stats['sprint_points']
-    driver_stats['wins'] = driver_stats['race_wins']  # Only count main race wins
+    driver_stats['wins'] = driver_stats['race_wins']
 
-    # Count podiums (race only)
     podiums = race_results[race_results['positionOrder'] <= 3].groupby('driverId').size().reset_index(name='podiums')
     driver_stats = driver_stats.merge(podiums, on='driverId', how='left')
     driver_stats['podiums'] = driver_stats['podiums'].fillna(0).astype(int)
 
-    # Get current team
     latest_race = race_results.sort_values('raceId').groupby('driverId').last().reset_index()
     driver_teams = latest_race[['driverId', 'constructorId']]
 
@@ -149,18 +136,19 @@ def create_drivers_table(data, season):
 
     return output
 
-def create_results_table(data, season):
+def create_results_table(data, seasons):
     """Create results table combining race and sprint results"""
-    race_results, sprint_results = get_combined_points(data, season)
+    race_results, sprint_results = get_combined_points(data, seasons)
 
-    # Process race results
     race_df = race_results.merge(data['drivers'], on='driverId')
+    race_df = race_df.merge(data['constructors'], on='constructorId')
     race_df = race_df.merge(data['status'], on='statusId')
 
     race_output = pd.DataFrame({
         'result_id': race_df['resultId'],
         'race_id': race_df['raceId'],
         'driver_id': race_df['driverRef'],
+        'constructor_id': race_df['constructorRef'],
         'position': race_df['positionOrder'],
         'points': race_df['points'].astype(int),
         'grid_position': race_df['grid'],
@@ -169,16 +157,16 @@ def create_results_table(data, season):
         'is_sprint': 'false'
     })
 
-    # Process sprint results
     sprint_df = sprint_results.merge(data['drivers'], on='driverId')
+    sprint_df = sprint_df.merge(data['constructors'], on='constructorId')
     sprint_df = sprint_df.merge(data['status'], on='statusId')
 
-    # Generate unique result_ids for sprints (offset to avoid collision)
     max_result_id = race_output['result_id'].max()
     sprint_output = pd.DataFrame({
         'result_id': range(max_result_id + 1, max_result_id + 1 + len(sprint_df)),
         'race_id': sprint_df['raceId'],
         'driver_id': sprint_df['driverRef'],
+        'constructor_id': sprint_df['constructorRef'],
         'position': sprint_df['positionOrder'],
         'points': sprint_df['points'].astype(int),
         'grid_position': sprint_df['grid'],
@@ -187,15 +175,14 @@ def create_results_table(data, season):
         'is_sprint': 'true'
     })
 
-    # Combine both
     output = pd.concat([race_output, sprint_output], ignore_index=True)
     output = output.sort_values(['race_id', 'is_sprint', 'position'])
 
     return output
 
-def create_qualifying_table(data, season):
-    """Create qualifying table for specified season"""
-    season_races = data['races'][data['races']['year'] == season]['raceId'].tolist()
+def create_qualifying_table(data, seasons):
+    """Create qualifying table for specified seasons"""
+    season_races = data['races'][data['races']['year'].isin(seasons)]['raceId'].tolist()
 
     qualifying = data['qualifying'][data['qualifying']['raceId'].isin(season_races)]
     qualifying = qualifying.merge(data['drivers'], on='driverId')
@@ -216,45 +203,39 @@ def main():
     print(f"Loading Kaggle data...")
     data = load_kaggle_data()
 
-    print(f"\nProcessing {SEASON} season (with sprint races)...")
+    print(f"\nProcessing seasons: {SEASONS}")
 
-    # Create output directory
     os.makedirs('output', exist_ok=True)
 
-    # Generate tables
     print("\nCreating races table...")
-    races = create_races_table(data, SEASON)
+    races = create_races_table(data, SEASONS)
     races.to_csv('output/races.csv', index=False)
     print(f"  → {len(races)} races")
 
     print("\nCreating teams table...")
-    teams = create_teams_table(data, SEASON)
+    teams = create_teams_table(data, SEASONS)
     teams.to_csv('output/teams.csv', index=False)
     print(f"  → {len(teams)} teams")
 
     print("\nCreating drivers table...")
-    drivers = create_drivers_table(data, SEASON)
+    drivers = create_drivers_table(data, SEASONS)
     drivers.to_csv('output/drivers.csv', index=False)
     print(f"  → {len(drivers)} drivers")
 
     print("\nCreating results table (race + sprint)...")
-    results = create_results_table(data, SEASON)
+    results = create_results_table(data, SEASONS)
     results.to_csv('output/results.csv', index=False)
-    print(f"  → {len(results)} total results ({len(results[results['is_sprint']==False])} race, {len(results[results['is_sprint']==True])} sprint)")
+    race_count = len(results[results['is_sprint'] == 'false'])
+    sprint_count = len(results[results['is_sprint'] == 'true'])
+    print(f"  → {len(results)} total results ({race_count} race, {sprint_count} sprint)")
 
     print("\nCreating qualifying table...")
-    qualifying = create_qualifying_table(data, SEASON)
+    qualifying = create_qualifying_table(data, SEASONS)
     qualifying.to_csv('output/qualifying.csv', index=False)
     print(f"  → {len(qualifying)} qualifying records")
 
-    # Verify top drivers
-    print("\n--- Verification: Top 5 Drivers ---")
-    top_drivers = drivers.nlargest(5, 'points')[['name', 'points', 'wins']]
-    print(top_drivers.to_string(index=False))
-
-    print("\n--- Verification: Top 5 Teams ---")
-    top_teams = teams.nlargest(5, 'points')[['name', 'points', 'wins']]
-    print(top_teams.to_string(index=False))
+    print("\n--- Races per Season ---")
+    print(races.groupby('season').size().to_string())
 
     print("\nDone! Files saved to output/")
 

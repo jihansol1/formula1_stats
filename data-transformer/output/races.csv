@@ -1,4 +1,129 @@
 race_id,name,circuit,country,date,season
+989,Australian Grand Prix,Albert Park Grand Prix Circuit,Australia,2018-03-25,2018
+990,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2018-04-08,2018
+991,Chinese Grand Prix,Shanghai International Circuit,China,2018-04-15,2018
+992,Azerbaijan Grand Prix,Baku City Circuit,Azerbaijan,2018-04-29,2018
+993,Spanish Grand Prix,Circuit de Barcelona-Catalunya,Spain,2018-05-13,2018
+994,Monaco Grand Prix,Circuit de Monaco,Monaco,2018-05-27,2018
+995,Canadian Grand Prix,Circuit Gilles Villeneuve,Canada,2018-06-10,2018
+996,French Grand Prix,Circuit Paul Ricard,France,2018-06-24,2018
+997,Austrian Grand Prix,Red Bull Ring,Austria,2018-07-01,2018
+998,British Grand Prix,Silverstone Circuit,UK,2018-07-08,2018
+999,German Grand Prix,Hockenheimring,Germany,2018-07-22,2018
+1000,Hungarian Grand Prix,Hungaroring,Hungary,2018-07-29,2018
+1001,Belgian Grand Prix,Circuit de Spa-Francorchamps,Belgium,2018-08-26,2018
+1002,Italian Grand Prix,Autodromo Nazionale di Monza,Italy,2018-09-02,2018
+1003,Singapore Grand Prix,Marina Bay Street Circuit,Singapore,2018-09-16,2018
+1004,Russian Grand Prix,Sochi Autodrom,Russia,2018-09-30,2018
+1005,Japanese Grand Prix,Suzuka Circuit,Japan,2018-10-07,2018
+1006,United States Grand Prix,Circuit of the Americas,USA,2018-10-21,2018
+1007,Mexican Grand Prix,Autódromo Hermanos Rodríguez,Mexico,2018-10-28,2018
+1008,Brazilian Grand Prix,Autódromo José Carlos Pace,Brazil,2018-11-11,2018
+1009,Abu Dhabi Grand Prix,Yas Marina Circuit,UAE,2018-11-25,2018
+1010,Australian Grand Prix,Albert Park Grand Prix Circuit,Australia,2019-03-17,2019
+1011,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2019-03-31,2019
+1012,Chinese Grand Prix,Shanghai International Circuit,China,2019-04-14,2019
+1013,Azerbaijan Grand Prix,Baku City Circuit,Azerbaijan,2019-04-28,2019
+1014,Spanish Grand Prix,Circuit de Barcelona-Catalunya,Spain,2019-05-12,2019
+1015,Monaco Grand Prix,Circuit de Monaco,Monaco,2019-05-26,2019
+1016,Canadian Grand Prix,Circuit Gilles Villeneuve,Canada,2019-06-09,2019
+1017,French Grand Prix,Circuit Paul Ricard,France,2019-06-23,2019
+1018,Austrian Grand Prix,Red Bull Ring,Austria,2019-06-30,2019
+1019,British Grand Prix,Silverstone Circuit,UK,2019-07-14,2019
+1020,German Grand Prix,Hockenheimring,Germany,2019-07-28,2019
+1021,Hungarian Grand Prix,Hungaroring,Hungary,2019-08-04,2019
+1022,Belgian Grand Prix,Circuit de Spa-Francorchamps,Belgium,2019-09-01,2019
+1023,Italian Grand Prix,Autodromo Nazionale di Monza,Italy,2019-09-08,2019
+1024,Singapore Grand Prix,Marina Bay Street Circuit,Singapore,2019-09-22,2019
+1025,Russian Grand Prix,Sochi Autodrom,Russia,2019-09-29,2019
+1026,Japanese Grand Prix,Suzuka Circuit,Japan,2019-10-13,2019
+1027,Mexican Grand Prix,Autódromo Hermanos Rodríguez,Mexico,2019-10-27,2019
+1028,United States Grand Prix,Circuit of the Americas,USA,2019-11-03,2019
+1029,Brazilian Grand Prix,Autódromo José Carlos Pace,Brazil,2019-11-17,2019
+1030,Abu Dhabi Grand Prix,Yas Marina Circuit,UAE,2019-12-01,2019
+1031,Austrian Grand Prix,Red Bull Ring,Austria,2020-07-05,2020
+1032,Styrian Grand Prix,Red Bull Ring,Austria,2020-07-12,2020
+1033,Hungarian Grand Prix,Hungaroring,Hungary,2020-07-19,2020
+1034,British Grand Prix,Silverstone Circuit,UK,2020-08-02,2020
+1035,70th Anniversary Grand Prix,Silverstone Circuit,UK,2020-08-09,2020
+1036,Spanish Grand Prix,Circuit de Barcelona-Catalunya,Spain,2020-08-16,2020
+1037,Belgian Grand Prix,Circuit de Spa-Francorchamps,Belgium,2020-08-30,2020
+1038,Italian Grand Prix,Autodromo Nazionale di Monza,Italy,2020-09-06,2020
+1039,Tuscan Grand Prix,Autodromo Internazionale del Mugello,Italy,2020-09-13,2020
+1040,Russian Grand Prix,Sochi Autodrom,Russia,2020-09-27,2020
+1041,Eifel Grand Prix,Nürburgring,Germany,2020-10-11,2020
+1042,Portuguese Grand Prix,Autódromo Internacional do Algarve,Portugal,2020-10-25,2020
+1043,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Italy,2020-11-01,2020
+1044,Turkish Grand Prix,Istanbul Park,Turkey,2020-11-15,2020
+1045,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2020-11-29,2020
+1046,Sakhir Grand Prix,Bahrain International Circuit,Bahrain,2020-12-06,2020
+1047,Abu Dhabi Grand Prix,Yas Marina Circuit,UAE,2020-12-13,2020
+1052,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2021-03-28,2021
+1053,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Italy,2021-04-18,2021
+1054,Portuguese Grand Prix,Autódromo Internacional do Algarve,Portugal,2021-05-02,2021
+1055,Spanish Grand Prix,Circuit de Barcelona-Catalunya,Spain,2021-05-09,2021
+1056,Monaco Grand Prix,Circuit de Monaco,Monaco,2021-05-23,2021
+1057,Azerbaijan Grand Prix,Baku City Circuit,Azerbaijan,2021-06-06,2021
+1059,French Grand Prix,Circuit Paul Ricard,France,2021-06-20,2021
+1058,Styrian Grand Prix,Red Bull Ring,Austria,2021-06-27,2021
+1060,Austrian Grand Prix,Red Bull Ring,Austria,2021-07-04,2021
+1061,British Grand Prix,Silverstone Circuit,UK,2021-07-18,2021
+1062,Hungarian Grand Prix,Hungaroring,Hungary,2021-08-01,2021
+1063,Belgian Grand Prix,Circuit de Spa-Francorchamps,Belgium,2021-08-29,2021
+1064,Dutch Grand Prix,Circuit Park Zandvoort,Netherlands,2021-09-05,2021
+1065,Italian Grand Prix,Autodromo Nazionale di Monza,Italy,2021-09-12,2021
+1066,Russian Grand Prix,Sochi Autodrom,Russia,2021-09-26,2021
+1067,Turkish Grand Prix,Istanbul Park,Turkey,2021-10-10,2021
+1069,United States Grand Prix,Circuit of the Americas,USA,2021-10-24,2021
+1070,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,Mexico,2021-11-07,2021
+1071,São Paulo Grand Prix,Autódromo José Carlos Pace,Brazil,2021-11-14,2021
+1051,Qatar Grand Prix,Losail International Circuit,Qatar,2021-11-21,2021
+1072,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Saudi Arabia,2021-12-05,2021
+1073,Abu Dhabi Grand Prix,Yas Marina Circuit,UAE,2021-12-12,2021
+1074,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2022-03-20,2022
+1075,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Saudi Arabia,2022-03-27,2022
+1076,Australian Grand Prix,Albert Park Grand Prix Circuit,Australia,2022-04-10,2022
+1077,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,Italy,2022-04-24,2022
+1078,Miami Grand Prix,Miami International Autodrome,USA,2022-05-08,2022
+1079,Spanish Grand Prix,Circuit de Barcelona-Catalunya,Spain,2022-05-22,2022
+1080,Monaco Grand Prix,Circuit de Monaco,Monaco,2022-05-29,2022
+1081,Azerbaijan Grand Prix,Baku City Circuit,Azerbaijan,2022-06-12,2022
+1082,Canadian Grand Prix,Circuit Gilles Villeneuve,Canada,2022-06-19,2022
+1083,British Grand Prix,Silverstone Circuit,UK,2022-07-03,2022
+1084,Austrian Grand Prix,Red Bull Ring,Austria,2022-07-10,2022
+1085,French Grand Prix,Circuit Paul Ricard,France,2022-07-24,2022
+1086,Hungarian Grand Prix,Hungaroring,Hungary,2022-07-31,2022
+1087,Belgian Grand Prix,Circuit de Spa-Francorchamps,Belgium,2022-08-28,2022
+1088,Dutch Grand Prix,Circuit Park Zandvoort,Netherlands,2022-09-04,2022
+1089,Italian Grand Prix,Autodromo Nazionale di Monza,Italy,2022-09-11,2022
+1091,Singapore Grand Prix,Marina Bay Street Circuit,Singapore,2022-10-02,2022
+1092,Japanese Grand Prix,Suzuka Circuit,Japan,2022-10-09,2022
+1093,United States Grand Prix,Circuit of the Americas,USA,2022-10-23,2022
+1094,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,Mexico,2022-10-30,2022
+1095,São Paulo Grand Prix,Autódromo José Carlos Pace,Brazil,2022-11-13,2022
+1096,Abu Dhabi Grand Prix,Yas Marina Circuit,UAE,2022-11-20,2022
+1098,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2023-03-05,2023
+1099,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Saudi Arabia,2023-03-19,2023
+1100,Australian Grand Prix,Albert Park Grand Prix Circuit,Australia,2023-04-02,2023
+1101,Azerbaijan Grand Prix,Baku City Circuit,Azerbaijan,2023-04-30,2023
+1102,Miami Grand Prix,Miami International Autodrome,USA,2023-05-07,2023
+1104,Monaco Grand Prix,Circuit de Monaco,Monaco,2023-05-28,2023
+1105,Spanish Grand Prix,Circuit de Barcelona-Catalunya,Spain,2023-06-04,2023
+1106,Canadian Grand Prix,Circuit Gilles Villeneuve,Canada,2023-06-18,2023
+1107,Austrian Grand Prix,Red Bull Ring,Austria,2023-07-02,2023
+1108,British Grand Prix,Silverstone Circuit,UK,2023-07-09,2023
+1109,Hungarian Grand Prix,Hungaroring,Hungary,2023-07-23,2023
+1110,Belgian Grand Prix,Circuit de Spa-Francorchamps,Belgium,2023-07-30,2023
+1111,Dutch Grand Prix,Circuit Park Zandvoort,Netherlands,2023-08-27,2023
+1112,Italian Grand Prix,Autodromo Nazionale di Monza,Italy,2023-09-03,2023
+1113,Singapore Grand Prix,Marina Bay Street Circuit,Singapore,2023-09-17,2023
+1114,Japanese Grand Prix,Suzuka Circuit,Japan,2023-09-24,2023
+1115,Qatar Grand Prix,Losail International Circuit,Qatar,2023-10-08,2023
+1116,United States Grand Prix,Circuit of the Americas,USA,2023-10-22,2023
+1117,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,Mexico,2023-10-29,2023
+1118,São Paulo Grand Prix,Autódromo José Carlos Pace,Brazil,2023-11-05,2023
+1119,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,United States,2023-11-19,2023
+1120,Abu Dhabi Grand Prix,Yas Marina Circuit,UAE,2023-11-26,2023
 1121,Bahrain Grand Prix,Bahrain International Circuit,Bahrain,2024-03-02,2024
 1122,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,Saudi Arabia,2024-03-09,2024
 1123,Australian Grand Prix,Albert Park Grand Prix Circuit,Australia,2024-03-24,2024
