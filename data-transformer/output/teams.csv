@@ -1,11 +1,11 @@
 team_id,name,nationality,points,wins,podiums
-mclaren,McLaren,British,609,6,21
-ferrari,Ferrari,Italian,595,5,22
-red_bull,Red Bull,Austrian,537,9,18
-mercedes,Mercedes,German,433,4,9
-aston_martin,Aston Martin,British,94,0,0
-alpine,Alpine F1 Team,French,63,0,2
-haas,Haas F1 Team,American,51,0,0
-rb,RB F1 Team,Italian,40,0,0
+mclaren,McLaren,British,666,6,21
 williams,Williams,British,17,0,0
+ferrari,Ferrari,Italian,652,5,22
+red_bull,Red Bull,Austrian,589,9,18
 sauber,Sauber,Swiss,4,0,0
+aston_martin,Aston Martin,British,94,0,0
+mercedes,Mercedes,German,468,4,9
+haas,Haas F1 Team,American,58,0,0
+alpine,Alpine F1 Team,French,65,0,2
+rb,RB F1 Team,Italian,46,0,0

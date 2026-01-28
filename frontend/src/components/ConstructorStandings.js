@@ -5,6 +5,15 @@ const ConstructorStandings = ({ standings, loading }) => {
         return <div className="loading">Loading standings...</div>;
     }
 
+    if (!standings || standings.length === 0) {
+        return (
+            <div className="standings-container">
+                <h2>Constructor Standings</h2>
+                <div className="no-data">No standings data available</div>
+            </div>
+        );
+    }
+
     return (
         <div className="standings-container">
             <h2>Constructor Standings</h2>
