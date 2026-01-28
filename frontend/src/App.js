@@ -40,10 +40,12 @@ function App() {
           getDriverStandings(selectedRace.raceId),
           getConstructorStandings(selectedRace.raceId)
         ]);
-        setDriverStandings(drivers);
-        setConstructorStandings(constructors);
+        setDriverStandings(drivers || []);
+        setConstructorStandings(constructors || []);
       } catch (error) {
         console.error('Error fetching standings:', error);
+        setDriverStandings([]);
+        setConstructorStandings([]);
       } finally {
         setLoading(false);
       }

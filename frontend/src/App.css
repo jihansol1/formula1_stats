@@ -225,3 +225,10 @@ body {
   padding: 40px;
   color: #888;
 }
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  font-style: italic;
+}

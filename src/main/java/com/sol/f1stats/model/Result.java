@@ -29,7 +29,10 @@ public class Result {
     private String status;
 
     @Column(name = "fastest_lap")
-    private Boolean fastestLap;
+    private String fastestLap;
+
+    @Column(name = "is_sprint")
+    private Boolean isSprint;
 
     // Default constructor
     public Result() {}
@@ -56,6 +59,9 @@ public class Result {
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 
-    public Boolean getFastestLap() { return fastestLap; }
-    public void setFastestLap(Boolean fastestLap) { this.fastestLap = fastestLap; }
+    public String getFastestLap() { return fastestLap; }
+    public void setFastestLap(String fastestLap) { this.fastestLap = fastestLap; }
+
+    public Boolean getIsSprint() { return isSprint; }
+    public void setIsSprint(Boolean isSprint) { this.isSprint = isSprint; }
 }
