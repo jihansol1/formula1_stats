@@ -34,6 +34,9 @@ public class Result {
     @Column(name = "is_sprint")
     private Boolean isSprint;
 
+    @Column(name = "constructor_id")
+    private String constructorId;
+
     // Default constructor
     public Result() {}
 
@@ -64,4 +67,8 @@ public class Result {
 
     public Boolean getIsSprint() { return isSprint; }
     public void setIsSprint(Boolean isSprint) { this.isSprint = isSprint; }
+
+    public String getConstructorId() { return constructorId; }
+
+    public void setConstructorId(String constructorId) { this.constructorId = constructorId; }
 }

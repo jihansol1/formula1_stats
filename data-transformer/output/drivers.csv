@@ -1,25 +1,41 @@
 driver_id,name,team_id,nationality,number,points,wins,podiums,poles
-hamilton,Lewis Hamilton,mercedes,British,44,223,2,5,0
-alonso,Fernando Alonso,aston_martin,Spanish,14,70,0,0,0
-hulkenberg,Nico Hülkenberg,haas,German,27,41,0,0,0
-perez,Sergio Pérez,red_bull,Mexican,11,152,0,4,0
-ricciardo,Daniel Ricciardo,rb,Australian,3,12,0,0,0
-bottas,Valtteri Bottas,sauber,Finnish,77,0,0,0,0
-kevin_magnussen,Kevin Magnussen,haas,Danish,20,16,0,0,0
-max_verstappen,Max Verstappen,red_bull,Dutch,33,437,9,14,8
-sainz,Carlos Sainz,ferrari,Spanish,55,290,2,9,1
-ocon,Esteban Ocon,alpine,French,31,23,0,1,0
-stroll,Lance Stroll,aston_martin,Canadian,18,24,0,0,0
-gasly,Pierre Gasly,alpine,French,10,42,0,1,0
-leclerc,Charles Leclerc,ferrari,Monegasque,16,356,3,13,3
-norris,Lando Norris,mclaren,British,4,374,4,13,8
-russell,George Russell,mercedes,British,63,245,2,4,4
-albon,Alexander Albon,williams,Thai,23,12,0,0,0
-tsunoda,Yuki Tsunoda,rb,Japanese,22,30,0,0,0
-zhou,Guanyu Zhou,sauber,Chinese,24,4,0,0,0
-piastri,Oscar Piastri,mclaren,Australian,81,292,2,8,0
-sargeant,Logan Sargeant,williams,American,2,0,0,0,0
-lawson,Liam Lawson,rb,New Zealander,30,4,0,0,0
+hamilton,Lewis Hamilton,mercedes,British,44,2252,43,85,32
+alonso,Fernando Alonso,aston_martin,Spanish,14,488,0,9,0
+raikkonen,Kimi Räikkönen,alfa,Finnish,7,308,1,12,1
+kubica,Robert Kubica,alfa,Polish,88,1,0,0,0
+vettel,Sebastian Vettel,aston_martin,German,5,673,6,23,7
+grosjean,Romain Grosjean,haas,French,8,47,0,0,0
+hulkenberg,Nico Hülkenberg,haas,German,27,166,0,0,0
+perez,Sergio Pérez,red_bull,Mexican,11,1171,6,32,3
+ricciardo,Daniel Ricciardo,rb,Australian,3,513,3,5,2
+bottas,Valtteri Bottas,sauber,Finnish,77,1081,7,45,16
+kevin_magnussen,Kevin Magnussen,haas,Danish,20,121,0,0,0
+kvyat,Daniil Kvyat,alphatauri,Russian,26,69,0,1,0
+ericsson,Marcus Ericsson,sauber,Swedish,9,9,0,0,0
+max_verstappen,Max Verstappen,red_bull,Dutch,33,2602,60,101,40
+sainz,Carlos Sainz,ferrari,Spanish,55,1154,4,27,6
+vandoorne,Stoffel Vandoorne,mclaren,Belgian,2,12,0,0,0
+ocon,Esteban Ocon,alpine,French,31,358,1,4,0
+stroll,Lance Stroll,aston_martin,Canadian,18,252,0,2,1
+giovinazzi,Antonio Giovinazzi,alfa,Italian,99,21,0,0,0
+gasly,Pierre Gasly,alpine,French,10,436,1,5,0
+brendon_hartley,Brendon Hartley,toro_rosso,New Zealander,28,4,0,0,0
+leclerc,Charles Leclerc,ferrari,Monegasque,16,1430,8,43,26
+sirotkin,Sergey Sirotkin,williams,Russian,35,1,0,0,0
+norris,Lando Norris,mclaren,British,4,1007,4,26,9
+russell,George Russell,mercedes,British,63,714,3,15,6
+albon,Alexander Albon,williams,Thai,23,240,0,2,0
+latifi,Nicholas Latifi,williams,Canadian,6,9,0,0,0
+pietro_fittipaldi,Pietro Fittipaldi,haas,Brazilian,51,0,0,0,0
+aitken,Jack Aitken,williams,British,89,0,0,0,0
+tsunoda,Yuki Tsunoda,rb,Japanese,22,91,0,0,0
+mazepin,Nikita Mazepin,haas,Russian,9,0,0,0,0
+mick_schumacher,Mick Schumacher,haas,German,47,12,0,0,0
+zhou,Guanyu Zhou,sauber,Chinese,24,16,0,0,0
+de_vries,Nyck de Vries,alphatauri,Dutch,21,2,0,0,0
+piastri,Oscar Piastri,mclaren,Australian,81,389,2,10,0
+sargeant,Logan Sargeant,williams,American,2,1,0,0,0
+lawson,Liam Lawson,rb,New Zealander,30,6,0,0,0
 bearman,Oliver Bearman,haas,British,38,7,0,0,0
 colapinto,Franco Colapinto,williams,Argentinian ,43,5,0,0,0
 doohan,Jack Doohan,alpine,Australian,61,0,0,0,0
